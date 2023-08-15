@@ -1,0 +1,285 @@
+/* start sidebar */
+
+.sidebar .list ul li:nth-child(3) {
+    background-color: #f6f6f6;
+}
+
+/* end sidebar */
+
+/* start profile */
+
+.contain .overview {
+    width: 230px;
+    position: relative;
+    flex-direction: column;
+}
+
+.contain .overview::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    background-color: #eee;
+    height: 300px;
+}
+
+.contain .overview img {
+    width: 150px;
+}
+
+.contain .overview .level {
+    position: relative;
+    width: 160px;
+    height: 5px;
+}
+
+.contain .overview .level::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: inherit;
+    background-color: var(--main-color);
+    left: 0;
+    border-radius: 6px;
+}
+
+.contain .overview .stars {
+    color: var(--orange-color);
+}
+
+.contain .info .box:hover {
+    transition: var(--main-transition);
+    background-color: #eeeeee82;
+}
+
+.contain .info .box:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.contain .info .box .top h4 {
+    margin-bottom: 0;
+}
+
+.contain .info .box .center {
+    flex-wrap: wrap;
+    gap: 0 80px;
+}
+
+.contain .info .box .center p span {
+    color: var(--grey-color);
+}
+
+.contain .info .box .bottom .check {
+    position: relative;
+}
+
+.contain .info .box .bottom .check input {
+    visibility: hidden;
+}
+
+.contain .info .box .bottom .check .checkbox {
+    position: absolute;
+    width: 68px;
+    height: 19px;
+    background-color: #ccc;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+
+.contain .info .box .bottom .check input:checked+.checkbox {
+    background-color: var(--main-color);
+}
+
+.contain .info .box .bottom .check .checkbox::before,
+.contain .info .box .bottom .check .checkbox::after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    border-radius: 15px;
+    top: 2px;
+    left: 6px;
+}
+
+.contain .info .box .bottom .check .checkbox::before {
+    content: "\f057";
+    left: 6px;
+    transition-delay: 0.2s;
+}
+
+.contain .info .box .bottom .check input:checked+label::before {
+    transition-delay: 0s;
+    visibility: hidden;
+}
+
+.contain .info .box .bottom .check .checkbox::after {
+    content: "\f058";
+    visibility: hidden;
+    transition: var(--main-transition);
+}
+
+.contain .info .box .bottom .check input:checked+label::after {
+    visibility: visible;
+    left: 50px;
+}
+
+@media (max-width: 1215px) {
+    .contain .overview::after {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1015px) {
+    .contain .overview img {
+        width: 100px;
+    }
+
+    .contain .overview h3 {
+        font-size: 20px;
+    }
+
+    .contain .overview .level {
+        width: 100px;
+    }
+
+    .contain .overview .level::after {
+        width: 60px;
+    }
+}
+
+@media (max-width: 796px) {
+    .contain {
+        flex-direction: column;
+    }
+
+    .contain .overview {
+        width: 100%;
+    }
+
+    .contain .overview::after {
+        display: none;
+    }
+
+    .contain .info {
+        margin-left: 0;
+    }
+
+    .contain .info .box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contain .info .box .center {
+        flex-direction: column;
+        padding: 30px;
+        font-size: 12px;
+    }
+
+    .contain .info .box .bottom .checkbox {
+        transform: translateX(-60%);
+    }
+}
+
+@media (max-width: 796px) {
+    .sec-contain {
+        display: block;
+    }
+}
+
+.skills {
+    width: calc(100% / 3);
+}
+
+.skills h2 {
+    margin-bottom: 0;
+}
+
+.skills p {
+    margin-top: 10px;
+}
+
+.skills ul li {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.skills ul li span {
+    background-color: #eee;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+@media (max-width: 796px) {
+    .skills {
+        width: 100%;
+        text-align: center;
+    }
+
+    .skills ul li {
+        justify-content: center;
+    }
+}
+
+.activities {
+    width: calc(2 * (100% / 3));
+}
+
+.activities h2 {
+    margin-bottom: 0;
+}
+
+.activities p {
+    margin-top: 10px;
+}
+
+.activities ul li:hover {
+    transition: var(--main-transition);
+    background-color: #eeeeee82;
+}
+
+.activities ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.activities ul li .image img {
+    width: 60px;
+}
+
+.activities ul li .box .right {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (max-width: 796px) {
+    .activities {
+        width: 100%;
+        text-align: center;
+    }
+
+    .activities ul li {
+        display: block;
+    }
+
+    .activities ul li .image {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .activities ul li .box {
+        display: block;
+    }
+
+    .activities ul li .box .right {
+        align-items: center;
+    }
+}
+
+/* end profile */

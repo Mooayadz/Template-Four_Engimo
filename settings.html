@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- render file -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Blaka+Ink&family=Cairo:wght@200;300;400;500;600;700;800&family=Lilita+One&family=Open+Sans:wght@300;400;500;600;700;800&family=Reem+Kufi+Ink&family=Tektur&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/pageheader.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <title>Settings</title>
+</head>
+
+<body>
+    <div class="contain-page">
+        <div class="sidebar pd-0-20">
+            <div class="header">
+                <h3>Enigmo</h3>
+            </div>
+            <div class="list pd-20-0">
+                <ul>
+                    <li class="pd-10-0 br-6">
+                        <a href="dashboard.html" class="pd-20">
+                            <i class="fa-regular fa-chart-bar fa-fw"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="pd-10-0 br-6">
+                        <a href="settings.html" class="pd-20">
+                            <i class="fa-solid fa-gear fa-fw"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="pd-10-0 br-6">
+                        <a href="profile.html" class="pd-20">
+                            <i class="fa-regular fa-user fa-fw"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="pd-10-0 br-6">
+                        <a href="projects.html" class="pd-20">
+                            <i class="fa-solid fa-diagram-project fa-fw"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="pd-10-0 br-6">
+                        <a href="courses.html" class="pd-20">
+                            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                            <span>Courses</span>
+                        </a>
+                    </li>
+                    <li class="pd-10-0 br-6">
+                        <a href="friends.html" class="pd-20">
+                            <i class="fa-regular fa-circle-user fa-fw"></i>
+                            <span>Friends</span>
+                        </a>
+                    </li>
+                    <li class="pd-10-0 br-6">
+                        <a href="files.html" class="pd-20">
+                            <i class="fa-regular fa-file fa-fw"></i>
+                            <span>Files</span>
+                        </a>
+                    </li>
+                    <li class="pd-10-0 br-6">
+                        <a href="plans.html" class="pd-20">
+                            <i class="fa-regular fa-credit-card fa-fw"></i>
+                            <span>Plans</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page">
+            <div class="search pd-10-20 bg-white">
+                <div class="left">
+                    <input class="br-10 pd-10" type="text" placeholder="Type A Keyword">
+                </div>
+                <div class="right">
+                    <span><i class="fa-regular fa-bell fa-lg"></i></span>
+                    <img src="imgs/avatar.png">
+                </div>
+            </div>
+            <div class="blank">
+                <div class="main-header mg-20">
+                    <h1>Settings</h1>
+                </div>
+                <div class="wrapper ds-gr gp-20 mg-20">
+                    <div class="site-control br-10 bg-white pd-20">
+                        <h2>Site Control</h2>
+                        <p>Control The Website If There Is Maintenance</p>
+                        <div class="box flex-between">
+                            <div class="left">
+                                <h4 class="font-500">Website Control</h4>
+                                <p class="font-500 font-13">Open/Close Website And Type The Reason</p>
+                            </div>
+                            <div class="right">
+                                <input type="checkbox" checked>
+                                <div class="checkbox br-15"></div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <textarea class="br-6 font-12 pd-10 font-500 mg-t-10"
+                                placeholder="Close Message Content"></textarea>
+                        </div>
+                    </div>
+                    <div class="general-info br-10 bg-white pd-20">
+                        <h2>General Info</h2>
+                        <p>General Information About Your Account</p>
+                        <div class="content mg-t-20">
+                            <div class="box">
+                                <p class="font-14 font-600 c-grey">First Name</p>
+                                <input class="font-13 font-500 br-6 w-full pd-10" type="text" placeholder="First Name">
+                            </div>
+                            <div class="box">
+                                <p class="font-14 font-600 c-grey">Last Name</p>
+                                <input class="font-13 font-500 br-6 w-full pd-10" type="text" placeholder="Last Name">
+                            </div>
+                            <div class="box">
+                                <p class="font-14 font-600 c-grey">Email</p>
+                                <div class="contain">
+                                    <input class="font-13 font-500 br-6 pd-10 mg-r-10" type="email" value="mo@mn.sa"
+                                        readonly>
+                                    <span>Change</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="security-info br-10 bg-white pd-20">
+                        <h2>Security Info</h2>
+                        <p>Security Information About Your Account</p>
+                        <div class="box flex-between">
+                            <div class="left">
+                                <h4 class="font-500">Password</h4>
+                                <p class="font-500 c-grey font-13">Last Change On 25/10/2021</p>
+                            </div>
+                            <div class="right">
+                                <a href="#">
+                                    <span class="c-white bg-main but-shape font-500">Change</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box flex-between">
+                            <div class="left">
+                                <h4 class="font-500">Two-Factor Authentication</h4>
+                                <p class="font-500 c-grey font-13">Enable/Disable The Feature</p>
+                            </div>
+                            <div class="right">
+                                <input type="checkbox" checked>
+                                <div class="checkbox br-15"></div>
+                            </div>
+                        </div>
+                        <div class="box flex-between">
+                            <div class="left">
+                                <h4 class="font-500">Devices</h4>
+                                <p class="font-500 c-grey font-13">Check The Login Devices List</p>
+                            </div>
+                            <div class="right">
+                                <a href="#">
+                                    <span class="bg-eee but-shape font-500">Devices</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-info br-10 bg-white pd-20">
+                        <h2>Social Info</h2>
+                        <p>Social Media Information</p>
+                        <div class="box ds-fl br-6 mg-20-0">
+                            <i class="fa-brands fa-twitter c-grey center-flex"></i>
+                            <input class="font-500 font-13 flex-1 pd-l-10" type="text" placeholder="Twitter Username">
+                        </div>
+                        <div class="box ds-fl br-6 mg-20-0">
+                            <i class="fa-brands fa-facebook c-grey center-flex"></i>
+                            <input class="font-500 font-13 flex-1 pd-l-10" type="text" placeholder="Facebook Username">
+                        </div>
+                        <div class="box ds-fl br-6 mg-20-0">
+                            <i class="fa-brands fa-linkedin c-grey center-flex"></i>
+                            <input class="font-500 font-13 flex-1 pd-l-10" type="text" placeholder="Linkedin Username">
+                        </div>
+                        <div class="box ds-fl br-6 mg-20-0">
+                            <i class="fa-brands fa-youtube c-grey center-flex"></i>
+                            <input class="font-500 font-13 flex-1 pd-l-10" type="text" placeholder="Youtube Username">
+                        </div>
+                    </div>
+                    <div class="widgets-control br-10 bg-white pd-20">
+                        <h2>Widgets Control</h2>
+                        <p>Show/Hide Widgets</p>
+                        <ul class="mg-t-20">
+                            <li class="mg-b-20">
+                                <input id="qd" type="checkbox" checked>
+                                <label for="qd" class="font-500 mg-l-30">Quick Draft</label>
+                            </li>
+                            <li class="mg-b-20">
+                                <input id="yt" type="checkbox" checked>
+                                <label for="yt" class="font-500 mg-l-30">Yearly Targets</label>
+                            </li>
+                            <li class="mg-b-20">
+                                <input id="ts" type="checkbox" checked>
+                                <label for="ts" class="font-500 mg-l-30">Tickets Statistics</label>
+                            </li>
+                            <li class="mg-b-20">
+                                <input id="ln" type="checkbox" checked>
+                                <label for="ln" class="font-500 mg-l-30">Latest News</label>
+                            </li>
+                            <li class="mg-b-20">
+                                <input id="lt" type="checkbox">
+                                <label for="lt" class="font-500 mg-l-30">Latest Tasks</label>
+                            </li>
+                            <li class="mg-b-20">
+                                <input id="tsi" type="checkbox" checked>
+                                <label for="tsi" class="font-500 mg-l-30">Top Search Items</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="backup-manager br-10 bg-white pd-20">
+                        <h2>Backup Manager</h2>
+                        <p>Control Backup Time And Location</p>
+                        <ul class="timing mg-t-20">
+                            <li class="mg-b-20 font-500">
+                                <input id="day" type="radio" name="time" checked>
+                                <label class="mg-l-10" for="day">Daily</label>
+                            </li>
+                            <li class="mg-b-20 font-500">
+                                <input id="week" type="radio" name="time">
+                                <label class="mg-l-10" for="week">Weekly</label>
+                            </li>
+                            <li class="mg-b-20 font-500">
+                                <input id="month" type="radio" name="time">
+                                <label class="mg-l-10" for="month">Monthly</label>
+                            </li>
+                        </ul>
+                        <ul class="backing mg-t-35 ds-fl">
+                            <li class="font-500 flex-1">
+                                <input id="zero" type="radio" name="backup">
+                                <div class="box ds-gr">
+                                    <i class="fa-solid fa-server center-flex"></i>
+                                    <label class="center-flex mg-t-10" for="zero">Elzero</label>
+                                </div>
+                            </li>
+                            <li class="font-500 mg-l-10 flex-1">
+                                <input id="enim" type="radio" name="backup" checked>
+                                <div class="box ds-gr">
+                                    <i class="fa-solid fa-server center-flex"></i>
+                                    <label class="center-flex mg-t-10" for="enim">Enigmo</label>
+                                </div>
+                            </li>
+                            <li class="font-500 mg-l-10 flex-1">
+                                <input id="sig" type="radio" name="backup">
+                                <div class="box ds-gr">
+                                    <i class="fa-solid fa-server  center-flex"></i>
+                                    <label class="center-flex mg-t-10" for="sig">Sigma</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

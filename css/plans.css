@@ -1,0 +1,83 @@
+/* start sidebar */
+
+.sidebar .list ul li:nth-child(8) {
+    background-color: #f6f6f6;
+}
+
+/* end sidebar */
+
+/* start plans */
+
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin-top: 40px;
+}
+
+@media (max-width: 796px) {
+    .wrapper {
+        grid-template-columns: minmax(280px, 1fr);
+    }
+}
+
+.wrapper .content .top {
+    border: 3px solid white;
+    outline: 3px solid;
+    margin-bottom: 20px;
+}
+
+.wrapper .content:first-child .top {
+    outline-color: var(--green-color);
+}
+
+.wrapper .content:nth-child(2) .top {
+    outline-color: var(--blue-color);
+}
+
+.wrapper .content:last-child .top {
+    outline-color: var(--main-color);
+}
+
+.wrapper .content .top h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.wrapper .content .top span {
+    font-size: 40px;
+    position: relative;
+}
+
+.wrapper .content .top span::before {
+    content: "\f155";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 25px;
+    position: absolute;
+    left: -20px;
+}
+
+.wrapper .content .middle ul li {
+    border-bottom: 1px solid #eee;
+}
+
+.wrapper .content .middle ul li .right {
+    color: var(--grey-color);
+}
+
+.wrapper .content .middle ul li .left .fa-check {
+    color: var(--green-color);
+}
+
+.wrapper .content .middle ul li .left .fa-xmark {
+    color: var(--red-color);
+}
+
+.wrapper .content .middle ul li .left p {
+    margin-left: 10px;
+}
+
+.wrapper .content .bottom {
+    margin-top: 20px;
+}
+
+/* end plans */

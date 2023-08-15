@@ -1,0 +1,22 @@
+.blank .main-header {
+    position: relative;
+}
+
+.blank .main-header::before,
+.blank .main-header::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+}
+
+.blank .main-header::before {
+    width: 120px;
+    background-color: white;
+}
+
+.blank .main-header::after {
+    width: 80px;
+    background-color: black;
+}

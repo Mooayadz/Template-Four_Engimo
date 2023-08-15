@@ -1,0 +1,130 @@
+/* start sidebar */
+
+.sidebar .list ul li:nth-child(6) {
+    background-color: #f6f6f6;
+}
+
+/* end sidebar */
+
+/* start friends */
+
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 40px;
+}
+
+@media (max-width: 796px) {
+    .wrapper {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+
+.wrapper .content .top {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.wrapper .content .top .contact {
+    display: flex;
+    gap: 5px;
+}
+
+.wrapper .content .top .contact .call,
+.wrapper .content .top .contact .message {
+    color: #666;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #eee;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .content .top .contact .call:hover,
+.wrapper .content .top .contact .message:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.wrapper .content .top .image img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.wrapper .content .top .text h4 {
+    margin-bottom: 0;
+}
+
+.wrapper .content .top .text p {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
+.wrapper .content .top .image,
+.wrapper .content .top .text {
+    text-align: center;
+}
+
+.wrapper .content .middle {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.wrapper .content .middle .left ul li {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .content .middle .left ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.wrapper .content .middle .left ul li p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wrapper .content .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.wrapper .content .bottom .left p {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey-color);
+}
+
+.wrapper .content .bottom .right a span {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.wrapper .content .bottom .right a:first-child span {
+    background-color: var(--blue-color);
+}
+
+.wrapper .content .bottom .right a:last-child span {
+    background-color: var(--red-color);
+}
+
+@media (max-width: 796px) {
+    .wrapper .content .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+}
+
+/* end friends */

@@ -1,0 +1,144 @@
+/* start sidebar */
+
+.sidebar .list ul li:nth-child(4) {
+    background-color: #f6f6f6;
+}
+
+/* end sidebar */
+
+/* start projects */
+
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-top: 40px;
+}
+
+@media (max-width: 796px) {
+    .wrapper {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+
+.wrapper .content img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.wrapper .content .top {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.wrapper .content .top .text {
+    margin-bottom: 40px;
+}
+
+.wrapper .content .top .text span {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper .content .top .text h4 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.wrapper .content .top .text p {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--grey-color);
+}
+
+.wrapper .content .top .image img:not(:first-child) {
+    margin-left: -25px;
+}
+
+.wrapper .content .middle {
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.wrapper .content .middle span {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background-color: #eee;
+}
+
+.wrapper .content .bottom .left .level {
+    position: relative;
+    height: 6px;
+    width: 250px;
+    border-radius: 6px;
+    background-color: #eee;
+}
+
+.wrapper .content .bottom .left .level::after {
+    content: "";
+    position: absolute;
+    height: inherit;
+    left: 0;
+    border-radius: inherit;
+}
+
+.wrapper .content .bottom .left .done::after {
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.wrapper .content .bottom .left .three-quarts::after {
+    width: 75%;
+    background-color: var(--green-color);
+}
+
+.wrapper .content .bottom .left .half::after {
+    width: 50%;
+    background-color: var(--blue-color);
+}
+
+.wrapper .content .bottom .left .quarts::after {
+    width: 25%;
+    background-color: var(--orange-color);
+}
+
+.wrapper .content .bottom .right {
+    color: var(--grey-color);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wrapper .content .bottom .right span {
+    margin-left: 3px;
+}
+
+@media (max-width: 796px) {
+    .wrapper .content .middle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .wrapper .content .bottom {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+/* end projects */
